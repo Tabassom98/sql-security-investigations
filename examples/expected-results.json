@@ -1,0 +1,150 @@
+{
+  "01_password_spray": [
+    {
+      "anchor_event_id": "spray-4",
+      "distinct_users": 4,
+      "failure_count": 4,
+      "observed_utc": "2026-01-15 09:03:00",
+      "src_ip": "192.0.2.50"
+    }
+  ],
+  "02_success_after_failures": [
+    {
+      "department": "engineering",
+      "preceding_failures": 5,
+      "src_ip": "198.51.100.25",
+      "success_event_id": "login-1",
+      "success_utc": "2026-01-15 10:05:00",
+      "user_id": "alex"
+    },
+    {
+      "department": "engineering",
+      "preceding_failures": 5,
+      "src_ip": "198.51.100.25",
+      "success_event_id": "login-2",
+      "success_utc": "2026-01-15 10:05:30",
+      "user_id": "alex"
+    }
+  ],
+  "03_access_after_flagged_login": [
+    {
+      "access_count": 2,
+      "first_access_utc": "2026-01-15 10:06:00",
+      "last_access_utc": "2026-01-15 10:07:00",
+      "resource": "/finance/export.csv",
+      "src_ip": "198.51.100.25",
+      "total_bytes": 12000000,
+      "user_id": "alex"
+    }
+  ],
+  "04_account_timeline": [
+    {
+      "bytes_sent": null,
+      "detail": "failure",
+      "event_time": 1768467600,
+      "event_utc": "2026-01-15 09:00:00",
+      "record_id": "spray-1",
+      "source": "authentication",
+      "src_ip": "192.0.2.50"
+    },
+    {
+      "bytes_sent": null,
+      "detail": "failure",
+      "event_time": 1768471230,
+      "event_utc": "2026-01-15 10:00:30",
+      "record_id": "guess-1",
+      "source": "authentication",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": null,
+      "detail": "failure",
+      "event_time": 1768471290,
+      "event_utc": "2026-01-15 10:01:30",
+      "record_id": "guess-2",
+      "source": "authentication",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": null,
+      "detail": "failure",
+      "event_time": 1768471350,
+      "event_utc": "2026-01-15 10:02:30",
+      "record_id": "guess-3",
+      "source": "authentication",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": null,
+      "detail": "failure",
+      "event_time": 1768471410,
+      "event_utc": "2026-01-15 10:03:30",
+      "record_id": "guess-4",
+      "source": "authentication",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": null,
+      "detail": "failure",
+      "event_time": 1768471470,
+      "event_utc": "2026-01-15 10:04:30",
+      "record_id": "guess-5",
+      "source": "authentication",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": null,
+      "detail": "success",
+      "event_time": 1768471500,
+      "event_utc": "2026-01-15 10:05:00",
+      "record_id": "login-1",
+      "source": "authentication",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": null,
+      "detail": "success",
+      "event_time": 1768471530,
+      "event_utc": "2026-01-15 10:05:30",
+      "record_id": "login-2",
+      "source": "authentication",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": 6000000,
+      "detail": "/finance/export.csv",
+      "event_time": 1768471560,
+      "event_utc": "2026-01-15 10:06:00",
+      "record_id": "access-1",
+      "source": "resource_access",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": 6000000,
+      "detail": "/finance/export.csv",
+      "event_time": 1768471620,
+      "event_utc": "2026-01-15 10:07:00",
+      "record_id": "access-2",
+      "source": "resource_access",
+      "src_ip": "198.51.100.25"
+    },
+    {
+      "bytes_sent": 90000000,
+      "detail": "/finance/export.csv",
+      "event_time": 1768471680,
+      "event_utc": "2026-01-15 10:08:00",
+      "record_id": "access-other-ip",
+      "source": "resource_access",
+      "src_ip": "203.0.113.20"
+    },
+    {
+      "bytes_sent": 90000000,
+      "detail": "/finance/export.csv",
+      "event_time": 1768472400,
+      "event_utc": "2026-01-15 10:20:00",
+      "record_id": "access-late",
+      "source": "resource_access",
+      "src_ip": "198.51.100.25"
+    }
+  ]
+}
