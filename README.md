@@ -2,7 +2,7 @@
 
 A small, reproducible investigation lab built with SQL, SQLite, and Python. Follow a simulated authentication case from suspicious login activity to resource access, then explain what the evidence supports and what it leaves unanswered.
 
-This is an AI-assisted starter portfolio project using entirely synthetic records. It is designed for learning and review; no real incident, production deployment, or detection accuracy is claimed.
+This portfolio project uses entirely synthetic records. It is designed for learning and review; no real incident, production deployment, or detection accuracy is claimed.
 
 ## Run it
 
@@ -50,6 +50,6 @@ The password-spray query emits matching anchors, not deduplicated incidents. Sim
 
 ## Provenance
 
-Created with AI assistance for Tabassom Azmi's portfolio. The setup includes generated code, synthetic evidence, and local test execution. It does not imply the owner has independently implemented or mastered every part. Future contributions should describe the actual work performed and retain tests and evidence for conclusions.
+The project includes synthetic evidence and reproducible tests. Future contributions should describe the actual work performed and retain tests and evidence for conclusions.
 
 MIT licensed. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
